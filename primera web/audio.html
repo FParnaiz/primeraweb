@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="cat">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUDIOS</title>
+    <link rel="stylesheet" href="priemera_web.css">
+</head>
+<body>
+    <audio id="mesi">>
+        <source src="recursos/audio/mesi.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="happy">>
+        <source src="recursos/audio/happy.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        var x = document.getElementById("mesi"); 
+        var y = document.getElementById("happy"); 
+        
+        function playAudio1() { 
+            x.play(); 
+        }  
+        function playAudio2() { 
+            y.play(); 
+        }  
+    </script>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="inici.html">Home</a></li>
+                <li><a href="audio.html">Àudios </a></li>
+                <li><a href="videos.html">Vídeos</a></li>
+                <li><a href="taules.html">Taules</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="multicolor">
+            <h1>SoUnDs ArE wAvEs</h1>
+        </div>
+        <div class="contenedor_boton">
+            <h2 class="title_boton">Encara Mesi</h2>
+            <button class="boton" d onclick="playAudio1()"></button>
+        </div>
+        <div class="contenedor_boton">
+            <h2 class="title_boton">Feliz Cumpleaños</h2>
+            <button class="boton" d onclick="playAudio2()"></button>
+        </div>
+        
+    </main> 
+    
+</body>
+</html>

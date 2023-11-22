@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="cat">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taules</title>
+    
+    <link rel="stylesheet" href="priemera_web.css">
+</head>
+<body id="m_taules">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="inici.html">Home</a></li>
+                <li><a href="audio.html">Àudios </a></li>
+                <li><a href="videos.html">Vídeos</a></li>
+                <li><a href="taules.html">Taules</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main >
+        <div class="multicolor" >
+            <h1 id="tb_title">Una tabla aburrida</h1>
+        </div>
+        <div id="msg">
+            <h1>Las tablas no son interesantes</h1>
+        </div>
+        <table id="tabla">
+        <tr>
+            <th>Ciudad</th>
+            <th>País</th>
+            <th>Continente</th>
+        </tr>
+        <tr>
+            <th>Roma</th>
+            <th>Italia</th>
+            <th>Europa</th>
+        </tr>
+        <tr>
+            <th>El Cairo</th>
+            <th>Egipto</th>
+            <th>África</th>
+        </tr>
+        <tr>
+            <th>Tokio</th>
+            <th>Japón</th>
+            <th>Asia</th>
+        </tr>
+   
+    </table>
+    <div><button  type="button" id="boton1" onclick="rickroll()">Haz las tablas más interesantes</button></div>
+    <script>
+        function rickroll(){
+            document.getElementById("tabla").style.visibility = "hidden";
+            document.getElementById("boton1").style.visibility = "hidden";
+            document.getElementById("msg").style.visibility = "visible";
+            document.getElementById("m_taules").style.backgroundImage = "url('recursos/gif/rick.gif')";;
+            document.getElementById("tb_title").style.visibility = "hidden";
+    }
+    </Script>
+    </main>
+    <footer >
+        <p>Antonio Arnaiz Tur</p>
+        <p>arnaiztur.toni@gmail.com</p>
+     </footer>
+</body>
+</html>
